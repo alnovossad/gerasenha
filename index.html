@@ -13,21 +13,27 @@
             <label for="password-length">Comprimento da Senha:</label>
             <input type="number" id="password-length" value="12" min="4" max="32">
 
-            <label>
-                <input type="checkbox" id="include-uppercase"> Letras Maiúsculas
-            </label>
-            <label>
-                <input type="checkbox" id="include-numbers"> Números
-            </label>
-            <label>
-                <input type="checkbox" id="include-symbols"> Símbolos
-            </label>
+            <div class="checkboxes">
+                <label>
+                    <input type="checkbox" id="include-uppercase"> Letras Maiúsculas
+                </label>
+                <label>
+                    <input type="checkbox" id="include-numbers"> Números
+                </label>
+                <label>
+                    <input type="checkbox" id="include-symbols"> Símbolos
+                </label>
+            </div>
         </div>
 
-        <button id="generate-btn" disabled>Gerar Senha (sem JS)</button>
+        <button id="generate-btn">Gerar Senha</button>
 
         <div class="password-result">
             <input type="text" id="generated-password" readonly placeholder="A senha gerada será exibida aqui">
+        </div>
+
+        <div class="instructions">
+            <p><strong>Instruções:</strong> Selecione as opções acima para personalizar sua senha e pressione "Gerar Senha" (sem funcionalidade dinâmica com HTML e CSS).</p>
         </div>
     </div>
 </body>
